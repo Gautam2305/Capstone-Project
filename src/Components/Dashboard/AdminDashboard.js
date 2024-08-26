@@ -18,7 +18,6 @@ function AdminDashboard() {
 
   const [userdetail, setUserdetail] = useState(false);
 
-
   const currUsername = sessionStorage.getItem("username");
 
   var newUserData = {
@@ -185,7 +184,7 @@ function AdminDashboard() {
           ></AdminTable>
         </div>
         <SideDash
-          head="Statists"
+          head="Statistics"
           numOfComplaints={numOfComplaints}
           complaintsFwded={complaintsFwded}
         ></SideDash>
