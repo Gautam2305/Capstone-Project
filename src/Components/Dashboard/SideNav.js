@@ -4,7 +4,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 function SideNav(props) {
   const navigate = useNavigate();
-  const [toggle, changetoggle] = useState(true);
   const [profileModal, openProfileModal] = useState(false);
   const [oldUsername, setOldUserName] = useState();
   const [newUserName, setNewUserName] = useState();
@@ -19,7 +18,6 @@ function SideNav(props) {
 
   var sendData = (e) => {
     e.preventDefault();
-    // console.log(formData);
 
     fetch("http://localhost:8000/update", {
       method: "POST",
