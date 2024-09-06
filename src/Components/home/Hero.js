@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from "react-bootstrap/Container";
-import hero from "../../Assets/images/hero-img.png";
 import About from "./About";
 
 import Navbar from "../Navbar";
